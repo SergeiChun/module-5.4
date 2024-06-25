@@ -1,9 +1,9 @@
-class Buiding:
-    total = 40
-    def __init__(self,total):
-        self.total = total
+class Building:
+    total = 0
 
-    for i in range (total):
-        i += 1
-        print('Здание №' , i)
+    def __init__(self):
+        Building.total += 1
 
+for i in range(40):
+    building = Building()
+    print(f'Building: {Building.total}')
